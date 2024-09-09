@@ -1,0 +1,15 @@
+__pycache__/
+.ipynb_checkpoints/
+*.DS_Store
+*.vs
+*.vscode
+*.idea
+*.zip
+# 忽略所有子文件夹中的 videos 目录
+**/videos/
+# 忽略所有子文件夹中的 model 目录
+**/model/
+# 忽略所有子文件夹中的 logs 目录
+**/logs/
+**/__pycache__/
+
