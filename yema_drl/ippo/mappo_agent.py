@@ -35,7 +35,7 @@ class ActorMLP(nn.Module):
 class CriticMLP(nn.Module):
     def __init__(self, args):
         super(CriticMLP, self).__init__()
-        self.fc1 = nn.Linear(args.state_dim, args.mlp_hidden_dim)
+        self.fc1 = nn.Linear(args.observation_dim, args.mlp_hidden_dim)
         self.fc2 = nn.Linear(args.mlp_hidden_dim, args.mlp_hidden_dim)
         self.fc3 = nn.Linear(args.mlp_hidden_dim, 1)
         self.activate_func = [nn.ReLU(), nn.Tanh()][args.use_tanh]
@@ -56,7 +56,6 @@ class MAPPO(object):
         self.n = args.n
         self.action_dim = args.action_dim
         self.observation_dim = args.observation_dim
-        self.state_dim = args.state_dim
         self.rnn_hidden_dim = args.rnn_hidden_dim
         self.batch_size = args.batch_size
         self.mini_batch_size = args.mini_batch_size
@@ -97,11 +96,9 @@ class MAPPO(object):
     def get_critic_value(self, observations):
         agent_names = [agent_name for agent_name, observation in observations.items()]
         observations = np.array([observation for agent_name, observation in observations.items()])  # (n, observation_dim)
-        state = observations.flatten()
+        observations = torch.tensor(observations, dtype=torch.float32)
         with torch.no_grad():
-            # Because each agent has the same global state, we need to repeat the global state 'n' times.
-            state = torch.tensor(state, dtype=torch.float32).repeat(self.n, 1)  # (n, state_dim)
-            values = self.critic(state)  # values.shape(n,1)
+            values = self.critic(observations)
             values = values.numpy().flatten()
         values_dict = {agent_name: values[i] for i, agent_name in enumerate(agent_names)}
         return values_dict
@@ -123,7 +120,7 @@ class MAPPO(object):
             actor_inputs.shape=(batch_size, max_episode_len, N, actor_input_dim)
             critic_inputs.shape=(batch_size, max_episode_len, N, critic_input_dim)
         """
-        actor_inputs, critic_inputs = batch['observations'], batch['state'].unsqueeze(2).repeat(1, 1, self.n, 1)
+        actor_inputs, critic_inputs = batch['observations'], batch['observations']
         # Optimize policy for K epochs:
         for _ in range(self.K_epochs):
             for index in BatchSampler(SequentialSampler(range(self.batch_size)), self.mini_batch_size, False):

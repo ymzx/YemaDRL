@@ -30,7 +30,7 @@ video_folder = r'videos'
 if not os.path.exists(video_folder):
     os.makedirs(video_folder)
 
-args = {'mlp_hidden_dim': 64, 'max_episode_steps': 50, 'use_tanh': True, 'action_dim': 5, 'use_orthogonal_init': None, 'max_action': None}
+args = {'mlp_hidden_dim': 64, 'max_episode_steps': 25, 'use_tanh': True, 'action_dim': 5, 'use_orthogonal_init': None, 'max_action': None}
 args = SimpleNamespace(**args)
 save_actor_path = r'model\simple_spread_v3_actor_100.pth'
 
