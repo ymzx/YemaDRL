@@ -3,7 +3,7 @@ import numpy as np
 from torch.utils.tensorboard import SummaryWriter
 import argparse
 from replay_buffer import ReplayBuffer
-from mappo_agent import MAPPO
+from ippo_agent import IPPO
 from pettingzoo.mpe import simple_spread_v4
 import os
 from yema_drl.common.normalization import Normalization
@@ -25,7 +25,7 @@ def make_env(max_cycles, render_mode="None"):
     return env
 
 
-class RunnerMAPPO(object):
+class RunnerIPPO(object):
     def __init__(self, args, env_name, seed):
         self.args = args
         self.env_name = env_name
@@ -57,7 +57,7 @@ class RunnerMAPPO(object):
         print("actions_dim={}".format(self.args.actions_dim))
 
         # Create N agents
-        self.agents = MAPPO(self.args)
+        self.agents = IPPO(self.args)
         self.replay_buffer = ReplayBuffer(self.args)
 
         # Build a tensorboard
@@ -122,7 +122,7 @@ class RunnerMAPPO(object):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser("Hyperparameters Setting for MAPPO in MPE environment")
+    parser = argparse.ArgumentParser("Hyperparameters Setting for IPPO in MPE environment")
     parser.add_argument("--max_train_steps", type=int, default=int(3e6), help=" Maximum number of training steps")
     parser.add_argument("--evaluate_steps", type=int, default=5000, help="Evaluate the policy every 'evaluate_freq' steps")
     parser.add_argument("--max_episode_steps", type=int, default=25, help="Maximum number of steps per episode")
@@ -147,6 +147,6 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     env_names = ['simple_spread_v3']
-    runner = RunnerMAPPO(args, env_name=env_names[0], seed=0)
+    runner = RunnerIPPO(args, env_name=env_names[0], seed=0)
     runner.run()
 

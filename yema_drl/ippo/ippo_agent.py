@@ -51,7 +51,7 @@ class CriticMLP(nn.Module):
         return value
 
 
-class MAPPO(object):
+class IPPO(object):
     def __init__(self, args):
         self.n = args.n
         self.action_dim = args.action_dim
