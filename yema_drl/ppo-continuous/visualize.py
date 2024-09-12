@@ -17,7 +17,7 @@ env_name = save_actor_path.split('\\')[-1].split('_')[0]
 
 # 使用 RecordVideo 包装器保存动画
 env = gym.make(env_name, render_mode="rgb_array")
-args.max_episode_steps = env._max_episode_steps
+args.max_episode_steps = env.spec.max_episode_steps
 env = gym.wrappers.RecordVideo(env, video_folder=video_folder, name_prefix=env_name)
 args.state_dim = env.observation_space.shape[0]
 args.action_dim = env.action_space.shape[0]
