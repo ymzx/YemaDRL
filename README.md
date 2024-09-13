@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/ymzx/YemaDRL/raw/master/assets/DRL-LOGO.png" alt="DRL Logo" width="200"/>
+  <img src="https://github.com/ymzx/YemaDRL/raw/master/assets/DRL-LOGO.png" alt="DRL Logo" width="200" style="margin-bottom: 0;"/>
 </p>
 
 <h3 align="center"><strong>YemaDRL: A Bridge to Deep Reinforcement Learning for Beginners</strong></h2>
