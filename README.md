@@ -1,9 +1,8 @@
 <p align="center">
-  <img src="https://github.com/ymzx/YemaDRL/raw/master/assets/DRL-LOGO.png" alt="DRL Logo" width="200">
+  <img src="https://github.com/ymzx/YemaDRL/raw/master/assets/DRL-LOGO.png" alt="DRL Logo" width="200"/>
 </p>
 
-<h3 align="center" style="margin-top: -10px;"><strong>YemaDRL: A Bridge to Deep Reinforcement Learning for Beginners</strong></h2>
-
+<h3 align="center" style="margin-top: -10px;"><strong>YemaDRL: A Bridge to Deep Reinforcement Learning for Beginners</strong></h3>
 ## <img title="" src="https://user-images.githubusercontent.com/48054808/157795569-9fc77c85-732f-4870-9be0-99a7fe2cff27.png" alt="" width="20"> 简介
 
 
