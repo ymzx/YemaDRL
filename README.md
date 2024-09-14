@@ -27,12 +27,12 @@ YemaDRL is designed for beginners in reinforcement learning, researchers, and de
 
 | **Category**           | **Algorithm**                            | **Description**                                                      |
 |------------------------|------------------------------------------|----------------------------------------------------------------------|
-| **Single-Agent**        | DQN (Deep Q-Network)                     | Value-based algorithm that uses Q-learning with neural networks.      |
-|                        | PPO (Proximal Policy Optimization)        | Policy gradient method with stable updates for better convergence.    |
-|                        | DDPG (Deep Deterministic Policy Gradient) | Actor-critic method for continuous action spaces.                     |
-|                        | Q-Learning                               | Basic RL algorithm for finding optimal action-value functions.        |
-| **Multi-Agent**         | MAPPO (Multi-Agent PPO)                  | Extension of PPO for cooperative multi-agent environments.            |
-|                        | IPPO (Independent PPO)                   | Independent version of PPO for decentralized multi-agent systems.     |
+| **Single-Agent**        | [DQN (Deep Q-Network)](https://github.com/ymzx/YemaDRL/tree/master/yema_drl/dqn)                     |  [paper](https://arxiv.org/pdf/1710.02298.pdf)    |
+|                        | [PPO (Proximal Policy Optimization)](https://github.com/ymzx/YemaDRL/tree/master/yema_drl/ppo-continuous)        |  [paper](https://arxiv.org/pdf/1707.06347.pdf)  |
+|                        | [DDPG (Deep Deterministic Policy Gradient)](https://github.com/ymzx/YemaDRL/tree/master/yema_drl/ddpg) |  [paper](https://arxiv.org/pdf/1509.02971.pdf)                   |
+|                        | [Q-Learning](https://github.com/ymzx/YemaDRL/tree/master/yema_drl/q-learning)                               |   [paper](https://link.springer.com/article/10.1007/BF00992698)     |
+| **Multi-Agent**         | [MAPPO (Multi-Agent PPO)](https://github.com/ymzx/YemaDRL/tree/master/yema_drl/mappo)                  |   [paper](https://arxiv.org/pdf/1509.02971.pdf)      |
+|                        | [IPPO (Independent PPO)](https://github.com/ymzx/YemaDRL/tree/master/yema_drl/ippo)                   |  [paper](https://arxiv.org/pdf/2103.01955v1) |
 
 
 
