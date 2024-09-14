@@ -18,26 +18,36 @@ YemaDRL is designed for beginners in reinforcement learning, researchers, and de
 - Research & Deployment Stage: For researchers applying reinforcement learning to real-world problems such as autonomous systems, robotics, or gaming.
 
 
-## 🚀 热门活动
+## 🚀 Update Log
 
-## <img src="https://user-images.githubusercontent.com/48054808/157793354-6e7f381a-0aa6-4bb7-845c-9acf2ecc05c3.png" width="20"/> 项目动态
 
-## <img src="https://user-images.githubusercontent.com/48054808/157835796-08d4ffbc-87d9-4622-89d8-cf11a44260fc.png" width="20"/> 贡献代码
 
-## <img src="https://user-images.githubusercontent.com/48054808/157799599-e6a66855-bac6-4e75-b9c0-96e13cb9612f.png" width="20"/> 特性
+## <img src="https://user-images.githubusercontent.com/48054808/157793354-6e7f381a-0aa6-4bb7-845c-9acf2ecc05c3.png" width="20"/> Supported Algorithms
 
-## <img title="" src="https://user-images.githubusercontent.com/48054808/157800467-2a9946ad-30d1-49a9-b9db-ba33413d9c90.png" alt="" width="20"> 技术交流
+| **Category**           | **Algorithm**                            | **Description**                                                      |
+|------------------------|------------------------------------------|----------------------------------------------------------------------|
+| **Single-Agent**        | DQN (Deep Q-Network)                     | Value-based algorithm that uses Q-learning with neural networks.      |
+|                        | PPO (Proximal Policy Optimization)        | Policy gradient method with stable updates for better convergence.    |
+|                        | DDPG (Deep Deterministic Policy Gradient) | Actor-critic method for continuous action spaces.                     |
+|                        | Q-Learning                               | Basic RL algorithm for finding optimal action-value functions.        |
+| **Multi-Agent**         | MAPPO (Multi-Agent PPO)                  | Extension of PPO for cooperative multi-agent environments.            |
+|                        | IPPO (Independent PPO)                   | Independent version of PPO for decentralized multi-agent systems.     |
 
-## <img src="https://user-images.githubusercontent.com/48054808/157829890-a535b8a6-631c-4c87-b861-64d4b32b2d6a.png" width="20"/> 模型库
 
-## <img src="https://user-images.githubusercontent.com/48054808/157828296-d5eb0ccb-23ea-40f5-9957-29853d7d13a9.png" width="20"/> 文档教程
-## <img src="https://user-images.githubusercontent.com/48054808/157835981-ef6057b4-6347-4768-8fcc-cd07fcc3d8b0.png" width="20"/> 版本更新
 
-## <img title="" src="https://user-images.githubusercontent.com/48054808/157835345-f5d24128-abaf-4813-b793-d2e5bdc70e5a.png" alt="" width="20"> 许可证书
+## <img src="https://user-images.githubusercontent.com/48054808/157799599-e6a66855-bac6-4e75-b9c0-96e13cb9612f.png" width="20"/> Roadmap and Future Features
 
-本项目的发布受[Apache 2.0 license](LICENSE)许可认证。
+## <img title="" src="https://user-images.githubusercontent.com/48054808/157800467-2a9946ad-30d1-49a9-b9db-ba33413d9c90.png" alt="" width="20"> Technical Discussion
 
-## <img src="https://user-images.githubusercontent.com/48054808/157835276-9aab9d1c-1c46-446b-bdd4-5ab75c5cfa48.png" width="20"/> 引用
+
+## <img src="https://user-images.githubusercontent.com/48054808/157828296-d5eb0ccb-23ea-40f5-9957-29853d7d13a9.png" width="20"/> Getting Started
+## <img src="https://user-images.githubusercontent.com/48054808/157835981-ef6057b4-6347-4768-8fcc-cd07fcc3d8b0.png" width="20"/> Release Notes
+
+## <img title="" src="https://user-images.githubusercontent.com/48054808/157835345-f5d24128-abaf-4813-b793-d2e5bdc70e5a.png" alt="" width="20"> License
+
+This project is licensed under the [Apache 2.0 license](LICENSE).
+
+## <img src="https://user-images.githubusercontent.com/48054808/157835276-9aab9d1c-1c46-446b-bdd4-5ab75c5cfa48.png" width="20"/> Citation
 
 If you use this project in your research, please cite it using the following BibTeX entry:
 
