@@ -4,13 +4,14 @@
 
 <h3 align="center" style="margin-top: -10px;"><strong>YemaDRL: A Bridge to Deep Reinforcement Learning for Beginners</strong></h3>
 
+---
+
 ## <img title="" src="https://user-images.githubusercontent.com/48054808/157795569-9fc77c85-732f-4870-9be0-99a7fe2cff27.png" alt="" width="20"> Why was YemaDRL created?
 
 <p align="justify">
   <strong>YemaDRL</strong> was developed to address the steep learning curve often faced by beginners in deep reinforcement learning. Many existing frameworks have complex codebases, unfriendly high-level APIs or inconsistent coding style, making them difficult for newcomers to grasp. YemaDRL simplifies this by offering a clean, modular design that facilitates easy experimentation and rapid prototyping. It serves as a foundation for understanding key RL concepts, allowing users to transition smoothly to more advanced frameworks, whether for single-agent learning frameworks like SpinningUp, Tianshou, Stable-Baselines3, or RLlib, or for multi-agent frameworks such as PettingZoo, PyMARL, MAlib, and MARLlib, making those tools more intuitive and effective for further exploration.
 </p>
 
----
 
 ## 👫 Who is YemaDRL for? 
 YemaDRL is designed for beginners in reinforcement learning, researchers, and developers who are interested in exploring or developing deep reinforcement learning (DRL) solutions. It serves as a bridge for those transitioning from basic machine learning concepts to more advanced RL algorithms.
