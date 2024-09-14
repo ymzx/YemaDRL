@@ -6,8 +6,9 @@
 
 ## <img title="" src="https://user-images.githubusercontent.com/48054808/157795569-9fc77c85-732f-4870-9be0-99a7fe2cff27.png" alt="" width="20"> What is YemaDRL?
 
-**YemaDRL** was developed to address the steep learning curve often faced by beginners in deep reinforcement learning. Many existing frameworks have overly abstract and complex interfaces, making them difficult for newcomers to grasp. YemaDRL simplifies this by offering a clean, modular design that facilitates easy experimentation and rapid prototyping. It serves as a foundation for understanding key RL concepts, allowing users to transition smoothly to more advanced frameworks like Tianshou and Rlib, making those tools more intuitive and effective for further exploration.
-
+<p align="justify">
+  **YemaDRL** was developed to address the steep learning curve often faced by beginners in deep reinforcement learning. Many existing frameworks have overly abstract and complex interfaces, making them difficult for newcomers to grasp. **YemaDRL** simplifies this by offering a clean, modular design that facilitates easy experimentation and rapid prototyping. It serves as a foundation for understanding key RL concepts, allowing users to transition smoothly to more advanced frameworks like Tianshou and Rlib, making those tools more intuitive and effective for further exploration.
+</p>
 ## 🚀 热门活动
 
 ## <img src="https://user-images.githubusercontent.com/48054808/157793354-6e7f381a-0aa6-4bb7-845c-9acf2ecc05c3.png" width="20"/> 项目动态
