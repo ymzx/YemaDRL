@@ -40,6 +40,10 @@ YemaDRL is designed for beginners in reinforcement learning, researchers, and de
 |                        | [IPPO (Independent PPO)](https://github.com/ymzx/YemaDRL/tree/master/yema_drl/ippo)                   |  [paper](https://arxiv.org/pdf/2103.01955v1) |
 
 
+## 💡 Showcase
+
+[仓库1](https://github.com/username/repo1) | [仓库2](https://github.com/username/repo2) | [仓库3](https://github.com/username/repo3) 
+
 
 ## <img src="https://user-images.githubusercontent.com/48054808/157799599-e6a66855-bac6-4e75-b9c0-96e13cb9612f.png" width="20"/> Roadmap and Future Features
 
