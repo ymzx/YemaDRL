@@ -42,7 +42,7 @@ YemaDRL is designed for beginners in reinforcement learning, researchers, and de
 
 ## 💡 Showcase
 
-[CartPole-v1_dqn](https://github.com/ymzx/YemaDRL/blob/master/assets/gif/CartPole-v1_dqn.gif) | [Simple_spread_v3](https://github.com/ymzx/YemaDRL/blob/master/assets/gif/simple_spread_v3_mappo.gif) 
+[CartPole-v1_dqn](https://github.com/ymzx/YemaDRL/blob/master/assets/gif/CartPole-v1_dqn.gif) | [Simple_spread_v3_mappo](https://github.com/ymzx/YemaDRL/blob/master/assets/gif/simple_spread_v3_mappo.gif) 
 
 
 ## <img src="https://user-images.githubusercontent.com/48054808/157799599-e6a66855-bac6-4e75-b9c0-96e13cb9612f.png" width="20"/> Roadmap and Future Features
