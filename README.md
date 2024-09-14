@@ -22,8 +22,9 @@ YemaDRL is designed for beginners in reinforcement learning, researchers, and de
 
 ## 🚀 Update Log
 
-- [2024.09.14]  release v0.1
- 
+- _2024.09.14_  **Release v0.1**
+
+
 
 
 
