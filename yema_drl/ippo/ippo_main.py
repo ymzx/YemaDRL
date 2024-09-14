@@ -146,7 +146,7 @@ if __name__ == '__main__':
     parser.add_argument("--use_tanh", type=bool, default=True, help="Whether to use tanh, if False, we will use relu")
 
     args = parser.parse_args()
-    env_names = ['simple_spread_v3']
+    env_names = ['simple_spread_v4']
     runner = RunnerIPPO(args, env_name=env_names[0], seed=0)
     runner.run()
 

@@ -1,5 +1,5 @@
 import gymnasium as gym
-from mappo_agent import ActorMLP
+from ippo_agent import ActorMLP
 from types import SimpleNamespace
 import torch
 import os
@@ -35,7 +35,7 @@ args = SimpleNamespace(**args)
 save_actor_path = r'model\simple_spread_v3_actor_100.pth'
 
 render_mode = ['rgb_array', "human"]
-env = simple_spread_v3.parallel_env(N=3, max_cycles=args.max_episode_steps, local_ratio=0.5, render_mode=render_mode[1], continuous_actions=False)
+env = simple_spread_v3.parallel_env(N=3, max_cycles=args.max_episode_steps, local_ratio=0.5, render_mode=render_mode[0], continuous_actions=False)
 env.reset()
 env_name = save_actor_path.split('\\')[-1].split('_')[0]
 args.observation_dim = [env.observation_space(agent).shape[0] for agent in env.agents][0]
@@ -54,7 +54,7 @@ for step in range(args.max_episode_steps):
     env.render()
     actions, actions_logprob = choose_action(observations=observations, actor=actor)
     observations, rewards, terminations, truncations, infos = env.step(actions)
-    # frame_list.append(Image.fromarray(env.render()))
+    frame_list.append(Image.fromarray(env.render()))
     observations = observations
     total_reward += sum(list(rewards.values()))
     # 如果终止或截断，退出循环，避免重复录制
@@ -65,5 +65,5 @@ env.close()
 print('总得分:', total_reward)
 # save gif
 gif_name = save_actor_path.split('\\')[-1]
-# frame_list[0].save(os.path.join(video_folder, f'{gif_name}.gif'),
-#                    save_all=True, append_images=frame_list[1:], duration=1, loop=0)
+frame_list[0].save(os.path.join(video_folder, f'{gif_name}.gif'),
+                   save_all=True, append_images=frame_list[1:], duration=1, loop=0)
